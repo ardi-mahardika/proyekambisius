@@ -1,12 +1,13 @@
 import { Job, DEFAULT_REFERRAL_CODE } from "@/types/micro1Job";
 import { INITIAL_MICRO1_JOBS } from "@/data/micro1InitialJobs";
 import { MERCOR_INITIAL_JOBS } from "@/data/mercorJobs";
+import { filterJobs, isJobAllowed } from "@/lib/jobFilters";
 
 // Cache duration: 15 minutes (in milliseconds)
 const CACHE_TTL_MS = 15 * 60 * 1000;
 
-// In-memory cache for server-side
-let serverJobs: Job[] = [...MERCOR_INITIAL_JOBS, ...INITIAL_MICRO1_JOBS];
+// In-memory cache for server-side (filtered globally)
+let serverJobs: Job[] = filterJobs([...MERCOR_INITIAL_JOBS, ...INITIAL_MICRO1_JOBS]);
 let lastFetchedTime: number = Date.now();
 let isSyncing = false;
 
@@ -219,7 +220,7 @@ export async function syncJobsFromMicro1(): Promise<Job[]> {
         };
       });
 
-      serverJobs = [...MERCOR_INITIAL_JOBS, ...transformedJobs];
+      serverJobs = filterJobs([...MERCOR_INITIAL_JOBS, ...transformedJobs]);
       lastFetchedTime = Date.now();
     }
   } catch (err) {
