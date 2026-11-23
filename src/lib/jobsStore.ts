@@ -2,12 +2,17 @@ import { Job, DEFAULT_REFERRAL_CODE } from "@/types/micro1Job";
 import { INITIAL_MICRO1_JOBS } from "@/data/micro1InitialJobs";
 import { MERCOR_INITIAL_JOBS } from "@/data/mercorJobs";
 import { filterJobs, isJobAllowed } from "@/lib/jobFilters";
+import { fetchMercorJobsLive } from "@/lib/mercorSync";
 
 // Cache duration: 15 minutes (in milliseconds)
 const CACHE_TTL_MS = 15 * 60 * 1000;
 
+// Track active jobs per source
+let currentMercorJobs: Job[] = MERCOR_INITIAL_JOBS;
+let currentMicro1Jobs: Job[] = INITIAL_MICRO1_JOBS;
+
 // In-memory cache for server-side (filtered globally)
-let serverJobs: Job[] = filterJobs([...MERCOR_INITIAL_JOBS, ...INITIAL_MICRO1_JOBS]);
+let serverJobs: Job[] = filterJobs([...currentMercorJobs, ...currentMicro1Jobs]);
 let lastFetchedTime: number = Date.now();
 let isSyncing = false;
 
@@ -220,7 +225,8 @@ export async function syncJobsFromMicro1(): Promise<Job[]> {
         };
       });
 
-      serverJobs = filterJobs([...MERCOR_INITIAL_JOBS, ...transformedJobs]);
+      currentMicro1Jobs = transformedJobs;
+      serverJobs = filterJobs([...currentMercorJobs, ...currentMicro1Jobs]);
       lastFetchedTime = Date.now();
     }
   } catch (err) {
@@ -229,18 +235,59 @@ export async function syncJobsFromMicro1(): Promise<Job[]> {
     isSyncing = false;
   }
 
+  return currentMicro1Jobs;
+}
+
+/**
+ * Fetch and synchronize latest jobs directly from Mercor.
+ */
+export async function syncJobsFromMercor(): Promise<Job[]> {
+  try {
+    const liveMercor = await fetchMercorJobsLive(25);
+    if (liveMercor && liveMercor.length > 0) {
+      currentMercorJobs = liveMercor;
+      serverJobs = filterJobs([...currentMercorJobs, ...currentMicro1Jobs]);
+      lastFetchedTime = Date.now();
+    }
+  } catch (err) {
+    console.error("Error syncing jobs from Mercor:", err);
+  }
+  return currentMercorJobs;
+}
+
+/**
+ * Synchronize all sources (Micro1 and Mercor) concurrently.
+ */
+export async function syncAllJobs(): Promise<Job[]> {
+  if (isSyncing) return serverJobs;
+  isSyncing = true;
+  try {
+    await Promise.allSettled([
+      syncJobsFromMicro1(),
+      syncJobsFromMercor()
+    ]);
+    serverJobs = filterJobs([...currentMercorJobs, ...currentMicro1Jobs]);
+    lastFetchedTime = Date.now();
+  } catch (err) {
+    console.error("Error in syncAllJobs:", err);
+  } finally {
+    isSyncing = false;
+  }
   return serverJobs;
 }
 
 /**
- * Returns jobs. If cache is older than 15 minutes, automatically updates from Micro1 in the background.
+ * Returns jobs. Uses Stale-While-Revalidate pattern:
+ * Returns cached jobs instantly, and refreshes both Micro1 & Mercor in the background when cache expires.
  */
 export async function getServerJobs(forceSync: boolean = false): Promise<Job[]> {
   const isCacheExpired = Date.now() - lastFetchedTime > CACHE_TTL_MS;
 
-  if (forceSync || (isCacheExpired && !isSyncing)) {
-    // If cache expired or forceSync, perform sync
-    await syncJobsFromMicro1();
+  if (forceSync) {
+    await syncAllJobs();
+  } else if (isCacheExpired && !isSyncing) {
+    // Background async update - never blocks user request
+    syncAllJobs().catch((err) => console.error("Background sync error:", err));
   }
 
   return serverJobs;
@@ -250,7 +297,7 @@ export async function getServerJobById(id: string): Promise<Job | undefined> {
   let job = serverJobs.find((j) => j.id === id);
   if (!job) {
     // Attempt one quick sync in case it was just posted
-    await syncJobsFromMicro1();
+    await syncAllJobs();
     job = serverJobs.find((j) => j.id === id);
   }
   return job;
