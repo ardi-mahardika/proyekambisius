@@ -2,106 +2,6 @@ import { Job } from "@/types/micro1Job";
 
 export const MERCOR_INITIAL_JOBS: Job[] = [
   {
-    "id": "list_AAABofHGD07UlwjpJg5AyIFY",
-    "title": "Practising Lawyer (Korea, Spain, Germany, France, Japan) — AI Legal Writing Survey",
-    "companyName": "Mercor AI Client",
-    "companyLogo": "/logos/mercor.svg",
-    "category": "AI & Machine Learning",
-    "location": "100% Remote (Global / Indonesia Eligible)",
-    "type": "Contract",
-    "hourlyMin": 120,
-    "hourlyMax": 150,
-    "referralReward": 1500,
-    "openings": 5,
-    "postedDate": "2026-11-23",
-    "isNew": true,
-    "isHighDemand": true,
-    "status": "Open",
-    "requiredSkills": [
-      "AI & Machine Learning",
-      "AI Training",
-      "Remote Work",
-      "English Communication"
-    ],
-    "description": "We're looking for practising lawyers who regularly use AI tools in their legal work to take part in a short paid survey for a legal AI company. Who we're…",
-    "description_id": "Peluang kerja remote global untuk posisi Practising Lawyer (Korea, Spain, Germany, France, Japan) — AI Legal Writing Survey. Proyek evaluasi dan pelatihan AI ini menawarkan jadwal kerja fleksibel secara asinkron dengan kompensasi kompetitif senilai $150/jam USD. Cocok untuk profesional yang ingin berkontribusi pada pengembangan model AI mutakhir.",
-    "qualifications": [
-      "Professional proficiency or domain expertise relevant to the role",
-      "Excellent written and verbal communication in English",
-      "Experience using or evaluating modern AI and Large Language Models",
-      "Ability to work independently and manage asynchronous communication"
-    ],
-    "qualifications_id": [
-      "Kemahiran profesional atau keahlian bidang yang relevan dengan posisi",
-      "Kemampuan komunikasi bahasa Inggris yang baik (tertulis dan lisan)",
-      "Pengalaman menggunakan atau mengevaluasi model AI / LLM modern",
-      "Mampu bekerja secara mandiri dengan alur kerja asinkron"
-    ],
-    "responsibilities": [
-      "Evaluate, annotate, and verify AI responses against expert domain benchmarks",
-      "Identify flaws, hallucinations, and formatting errors in LLM outputs",
-      "Provide detailed qualitative feedback and rationale for model ratings",
-      "Adhere to project-specific quality guidelines and delivery timelines"
-    ],
-    "responsibilities_id": [
-      "Mengevaluasi, memberi anotasi, dan memverifikasi respons AI berdasarkan tolok ukur standar keahlian",
-      "Mengidentifikasi kekeliruan, halusinasi fakta, dan kesalahan format pada output LLM",
-      "Memberikan umpan balik terperinci dan alasan di balik setiap penilaian kualitas model",
-      "Mematuhi pedoman kualitas proyek dan tenggat waktu pengerjaan"
-    ],
-    "customReferralUrl": "https://t.mercor.com/yqEan"
-  },
-  {
-    "id": "list_AAABoe5-EDcz8NJf_69EcIgl",
-    "title": "Voice Actor: CX Agent Voice Cloning (Dutch)",
-    "companyName": "Mercor AI Client",
-    "companyLogo": "/logos/mercor.svg",
-    "category": "Design",
-    "location": "100% Remote (Global / Indonesia Eligible)",
-    "type": "Contract",
-    "hourlyMin": 50,
-    "hourlyMax": 50,
-    "referralReward": 500,
-    "openings": 5,
-    "postedDate": "2026-11-22",
-    "isNew": true,
-    "isHighDemand": false,
-    "status": "Open",
-    "requiredSkills": [
-      "Design",
-      "AI Training",
-      "Remote Work",
-      "English Communication"
-    ],
-    "description": "Mercor is partnering with a leading AI research lab to build next-generation text-to-speech (TTS) systems capable of producing natural, expressive, and…",
-    "description_id": "Peluang kerja remote global untuk posisi Voice Actor: CX Agent Voice Cloning (Dutch). Proyek evaluasi dan pelatihan AI ini menawarkan jadwal kerja fleksibel secara asinkron dengan kompensasi kompetitif senilai $50/jam USD. Cocok untuk profesional yang ingin berkontribusi pada pengembangan model AI mutakhir.",
-    "qualifications": [
-      "Professional proficiency or domain expertise relevant to the role",
-      "Excellent written and verbal communication in English",
-      "Experience using or evaluating modern AI and Large Language Models",
-      "Ability to work independently and manage asynchronous communication"
-    ],
-    "qualifications_id": [
-      "Kemahiran profesional atau keahlian bidang yang relevan dengan posisi",
-      "Kemampuan komunikasi bahasa Inggris yang baik (tertulis dan lisan)",
-      "Pengalaman menggunakan atau mengevaluasi model AI / LLM modern",
-      "Mampu bekerja secara mandiri dengan alur kerja asinkron"
-    ],
-    "responsibilities": [
-      "Evaluate, annotate, and verify AI responses against expert domain benchmarks",
-      "Identify flaws, hallucinations, and formatting errors in LLM outputs",
-      "Provide detailed qualitative feedback and rationale for model ratings",
-      "Adhere to project-specific quality guidelines and delivery timelines"
-    ],
-    "responsibilities_id": [
-      "Mengevaluasi, memberi anotasi, dan memverifikasi respons AI berdasarkan tolok ukur standar keahlian",
-      "Mengidentifikasi kekeliruan, halusinasi fakta, dan kesalahan format pada output LLM",
-      "Memberikan umpan balik terperinci dan alasan di balik setiap penilaian kualitas model",
-      "Mematuhi pedoman kualitas proyek dan tenggat waktu pengerjaan"
-    ],
-    "customReferralUrl": "https://t.mercor.com/yqEan"
-  },
-  {
     "id": "list_AAABoeqolT5tlmjFO69CV5TO",
     "title": "Healthcare Payer Landscape & Reimbursement Analyst (RCM)",
     "companyName": "Mercor AI Client",
@@ -113,7 +13,7 @@ export const MERCOR_INITIAL_JOBS: Job[] = [
     "hourlyMax": 95,
     "referralReward": 950,
     "openings": 5,
-    "postedDate": "2026-11-21",
+    "postedDate": "2026-11-23",
     "isNew": true,
     "isHighDemand": true,
     "status": "Open",
@@ -163,7 +63,7 @@ export const MERCOR_INITIAL_JOBS: Job[] = [
     "hourlyMax": 68,
     "referralReward": 680,
     "openings": 5,
-    "postedDate": "2026-11-20",
+    "postedDate": "2026-11-22",
     "isNew": true,
     "isHighDemand": false,
     "status": "Open",
@@ -213,7 +113,7 @@ export const MERCOR_INITIAL_JOBS: Job[] = [
     "hourlyMax": 100,
     "referralReward": 1000,
     "openings": 5,
-    "postedDate": "2026-11-19",
+    "postedDate": "2026-11-21",
     "isNew": true,
     "isHighDemand": true,
     "status": "Open",
@@ -263,8 +163,8 @@ export const MERCOR_INITIAL_JOBS: Job[] = [
     "hourlyMax": 100,
     "referralReward": 1000,
     "openings": 5,
-    "postedDate": "2026-11-18",
-    "isNew": false,
+    "postedDate": "2026-11-20",
+    "isNew": true,
     "isHighDemand": true,
     "status": "Open",
     "requiredSkills": [
@@ -313,8 +213,8 @@ export const MERCOR_INITIAL_JOBS: Job[] = [
     "hourlyMax": 100,
     "referralReward": 1000,
     "openings": 5,
-    "postedDate": "2026-11-17",
-    "isNew": false,
+    "postedDate": "2026-11-19",
+    "isNew": true,
     "isHighDemand": true,
     "status": "Open",
     "requiredSkills": [
@@ -363,7 +263,7 @@ export const MERCOR_INITIAL_JOBS: Job[] = [
     "hourlyMax": 100,
     "referralReward": 1000,
     "openings": 5,
-    "postedDate": "2026-11-16",
+    "postedDate": "2026-11-18",
     "isNew": false,
     "isHighDemand": true,
     "status": "Open",
@@ -413,7 +313,7 @@ export const MERCOR_INITIAL_JOBS: Job[] = [
     "hourlyMax": 100,
     "referralReward": 1000,
     "openings": 5,
-    "postedDate": "2026-11-15",
+    "postedDate": "2026-11-17",
     "isNew": false,
     "isHighDemand": true,
     "status": "Open",
@@ -463,7 +363,7 @@ export const MERCOR_INITIAL_JOBS: Job[] = [
     "hourlyMax": 85,
     "referralReward": 850,
     "openings": 5,
-    "postedDate": "2026-11-14",
+    "postedDate": "2026-11-16",
     "isNew": false,
     "isHighDemand": true,
     "status": "Open",
@@ -513,7 +413,7 @@ export const MERCOR_INITIAL_JOBS: Job[] = [
     "hourlyMax": 85,
     "referralReward": 850,
     "openings": 5,
-    "postedDate": "2026-11-13",
+    "postedDate": "2026-11-15",
     "isNew": false,
     "isHighDemand": true,
     "status": "Open",
@@ -563,7 +463,7 @@ export const MERCOR_INITIAL_JOBS: Job[] = [
     "hourlyMax": 100,
     "referralReward": 1000,
     "openings": 5,
-    "postedDate": "2026-11-12",
+    "postedDate": "2026-11-14",
     "isNew": false,
     "isHighDemand": true,
     "status": "Open",
@@ -613,7 +513,7 @@ export const MERCOR_INITIAL_JOBS: Job[] = [
     "hourlyMax": 100,
     "referralReward": 1000,
     "openings": 5,
-    "postedDate": "2026-11-11",
+    "postedDate": "2026-11-13",
     "isNew": false,
     "isHighDemand": true,
     "status": "Open",
@@ -663,7 +563,7 @@ export const MERCOR_INITIAL_JOBS: Job[] = [
     "hourlyMax": 85,
     "referralReward": 850,
     "openings": 5,
-    "postedDate": "2026-11-10",
+    "postedDate": "2026-11-12",
     "isNew": false,
     "isHighDemand": true,
     "status": "Open",
@@ -713,7 +613,7 @@ export const MERCOR_INITIAL_JOBS: Job[] = [
     "hourlyMax": 50,
     "referralReward": 500,
     "openings": 5,
-    "postedDate": "2026-11-09",
+    "postedDate": "2026-11-11",
     "isNew": false,
     "isHighDemand": false,
     "status": "Open",
@@ -763,7 +663,7 @@ export const MERCOR_INITIAL_JOBS: Job[] = [
     "hourlyMax": 50,
     "referralReward": 500,
     "openings": 5,
-    "postedDate": "2026-11-08",
+    "postedDate": "2026-11-10",
     "isNew": false,
     "isHighDemand": false,
     "status": "Open",
@@ -813,7 +713,7 @@ export const MERCOR_INITIAL_JOBS: Job[] = [
     "hourlyMax": 50,
     "referralReward": 500,
     "openings": 5,
-    "postedDate": "2026-11-07",
+    "postedDate": "2026-11-09",
     "isNew": false,
     "isHighDemand": false,
     "status": "Open",
@@ -863,7 +763,7 @@ export const MERCOR_INITIAL_JOBS: Job[] = [
     "hourlyMax": 50,
     "referralReward": 500,
     "openings": 5,
-    "postedDate": "2026-11-06",
+    "postedDate": "2026-11-08",
     "isNew": false,
     "isHighDemand": false,
     "status": "Open",
@@ -913,7 +813,7 @@ export const MERCOR_INITIAL_JOBS: Job[] = [
     "hourlyMax": 50,
     "referralReward": 500,
     "openings": 5,
-    "postedDate": "2026-11-05",
+    "postedDate": "2026-11-07",
     "isNew": false,
     "isHighDemand": false,
     "status": "Open",
@@ -963,7 +863,7 @@ export const MERCOR_INITIAL_JOBS: Job[] = [
     "hourlyMax": 50,
     "referralReward": 500,
     "openings": 5,
-    "postedDate": "2026-11-04",
+    "postedDate": "2026-11-06",
     "isNew": false,
     "isHighDemand": false,
     "status": "Open",
@@ -975,6 +875,356 @@ export const MERCOR_INITIAL_JOBS: Job[] = [
     ],
     "description": "Mercor is recruiting operations and finance leaders from US independent insurance agencies and brokerages for a paid, one-hour research interview about agency…",
     "description_id": "Peluang kerja remote global untuk posisi Insurance Agency Operations & Finance Leader – Paid Research Interview. Proyek evaluasi dan pelatihan AI ini menawarkan jadwal kerja fleksibel secara asinkron dengan kompensasi kompetitif senilai $50/jam USD. Cocok untuk profesional yang ingin berkontribusi pada pengembangan model AI mutakhir.",
+    "qualifications": [
+      "Professional proficiency or domain expertise relevant to the role",
+      "Excellent written and verbal communication in English",
+      "Experience using or evaluating modern AI and Large Language Models",
+      "Ability to work independently and manage asynchronous communication"
+    ],
+    "qualifications_id": [
+      "Kemahiran profesional atau keahlian bidang yang relevan dengan posisi",
+      "Kemampuan komunikasi bahasa Inggris yang baik (tertulis dan lisan)",
+      "Pengalaman menggunakan atau mengevaluasi model AI / LLM modern",
+      "Mampu bekerja secara mandiri dengan alur kerja asinkron"
+    ],
+    "responsibilities": [
+      "Evaluate, annotate, and verify AI responses against expert domain benchmarks",
+      "Identify flaws, hallucinations, and formatting errors in LLM outputs",
+      "Provide detailed qualitative feedback and rationale for model ratings",
+      "Adhere to project-specific quality guidelines and delivery timelines"
+    ],
+    "responsibilities_id": [
+      "Mengevaluasi, memberi anotasi, dan memverifikasi respons AI berdasarkan tolok ukur standar keahlian",
+      "Mengidentifikasi kekeliruan, halusinasi fakta, dan kesalahan format pada output LLM",
+      "Memberikan umpan balik terperinci dan alasan di balik setiap penilaian kualitas model",
+      "Mematuhi pedoman kualitas proyek dan tenggat waktu pengerjaan"
+    ],
+    "customReferralUrl": "https://t.mercor.com/yqEan"
+  },
+  {
+    "id": "list_AAABod-XpCFXW1KhVe9F8pnR",
+    "title": "Cyber Engineer (3+ Years Experience)",
+    "companyName": "Mercor AI Client",
+    "companyLogo": "/logos/mercor.svg",
+    "category": "Engineering",
+    "location": "100% Remote (Global / Indonesia Eligible)",
+    "type": "Contract",
+    "hourlyMin": 50,
+    "hourlyMax": 50,
+    "referralReward": 500,
+    "openings": 5,
+    "postedDate": "2026-11-05",
+    "isNew": false,
+    "isHighDemand": false,
+    "status": "Open",
+    "requiredSkills": [
+      "Engineering",
+      "AI Training",
+      "Remote Work",
+      "English Communication"
+    ],
+    "description": "We’re looking for cyber engineers with 3years of professional experience in application security, vulnerability research, penetration testing, or secure…",
+    "description_id": "Peluang kerja remote global untuk posisi Cyber Engineer (3+ Years Experience). Proyek evaluasi dan pelatihan AI ini menawarkan jadwal kerja fleksibel secara asinkron dengan kompensasi kompetitif senilai $50/jam USD. Cocok untuk profesional yang ingin berkontribusi pada pengembangan model AI mutakhir.",
+    "qualifications": [
+      "Professional proficiency or domain expertise relevant to the role",
+      "Excellent written and verbal communication in English",
+      "Experience using or evaluating modern AI and Large Language Models",
+      "Ability to work independently and manage asynchronous communication"
+    ],
+    "qualifications_id": [
+      "Kemahiran profesional atau keahlian bidang yang relevan dengan posisi",
+      "Kemampuan komunikasi bahasa Inggris yang baik (tertulis dan lisan)",
+      "Pengalaman menggunakan atau mengevaluasi model AI / LLM modern",
+      "Mampu bekerja secara mandiri dengan alur kerja asinkron"
+    ],
+    "responsibilities": [
+      "Evaluate, annotate, and verify AI responses against expert domain benchmarks",
+      "Identify flaws, hallucinations, and formatting errors in LLM outputs",
+      "Provide detailed qualitative feedback and rationale for model ratings",
+      "Adhere to project-specific quality guidelines and delivery timelines"
+    ],
+    "responsibilities_id": [
+      "Mengevaluasi, memberi anotasi, dan memverifikasi respons AI berdasarkan tolok ukur standar keahlian",
+      "Mengidentifikasi kekeliruan, halusinasi fakta, dan kesalahan format pada output LLM",
+      "Memberikan umpan balik terperinci dan alasan di balik setiap penilaian kualitas model",
+      "Mematuhi pedoman kualitas proyek dan tenggat waktu pengerjaan"
+    ],
+    "customReferralUrl": "https://t.mercor.com/yqEan"
+  },
+  {
+    "id": "list_AAABodwhbMXQuKR3sa9LBqVq",
+    "title": "Drug Discovery & Translational Science Expert",
+    "companyName": "Mercor AI Client",
+    "companyLogo": "/logos/mercor.svg",
+    "category": "AI & Machine Learning",
+    "location": "100% Remote (Global / Indonesia Eligible)",
+    "type": "Contract",
+    "hourlyMin": 70,
+    "hourlyMax": 100,
+    "referralReward": 1000,
+    "openings": 5,
+    "postedDate": "2026-11-04",
+    "isNew": false,
+    "isHighDemand": true,
+    "status": "Open",
+    "requiredSkills": [
+      "AI & Machine Learning",
+      "AI Training",
+      "Remote Work",
+      "English Communication"
+    ],
+    "description": "Join a leading AI lab's cutting-edge GenAI team to be at the core of the AI revolution, where your expertise fuels the development of the most advanced Large…",
+    "description_id": "Peluang kerja remote global untuk posisi Drug Discovery & Translational Science Expert. Proyek evaluasi dan pelatihan AI ini menawarkan jadwal kerja fleksibel secara asinkron dengan kompensasi kompetitif senilai $100/jam USD. Cocok untuk profesional yang ingin berkontribusi pada pengembangan model AI mutakhir.",
+    "qualifications": [
+      "Professional proficiency or domain expertise relevant to the role",
+      "Excellent written and verbal communication in English",
+      "Experience using or evaluating modern AI and Large Language Models",
+      "Ability to work independently and manage asynchronous communication"
+    ],
+    "qualifications_id": [
+      "Kemahiran profesional atau keahlian bidang yang relevan dengan posisi",
+      "Kemampuan komunikasi bahasa Inggris yang baik (tertulis dan lisan)",
+      "Pengalaman menggunakan atau mengevaluasi model AI / LLM modern",
+      "Mampu bekerja secara mandiri dengan alur kerja asinkron"
+    ],
+    "responsibilities": [
+      "Evaluate, annotate, and verify AI responses against expert domain benchmarks",
+      "Identify flaws, hallucinations, and formatting errors in LLM outputs",
+      "Provide detailed qualitative feedback and rationale for model ratings",
+      "Adhere to project-specific quality guidelines and delivery timelines"
+    ],
+    "responsibilities_id": [
+      "Mengevaluasi, memberi anotasi, dan memverifikasi respons AI berdasarkan tolok ukur standar keahlian",
+      "Mengidentifikasi kekeliruan, halusinasi fakta, dan kesalahan format pada output LLM",
+      "Memberikan umpan balik terperinci dan alasan di balik setiap penilaian kualitas model",
+      "Mematuhi pedoman kualitas proyek dan tenggat waktu pengerjaan"
+    ],
+    "customReferralUrl": "https://t.mercor.com/yqEan"
+  },
+  {
+    "id": "list_AAABodwhWFi4jOyOolVBaJGw",
+    "title": "Medical Affairs & Commercial Expert",
+    "companyName": "Mercor AI Client",
+    "companyLogo": "/logos/mercor.svg",
+    "category": "AI & Machine Learning",
+    "location": "100% Remote (Global / Indonesia Eligible)",
+    "type": "Contract",
+    "hourlyMin": 70,
+    "hourlyMax": 100,
+    "referralReward": 1000,
+    "openings": 5,
+    "postedDate": "2026-11-03",
+    "isNew": false,
+    "isHighDemand": true,
+    "status": "Open",
+    "requiredSkills": [
+      "AI & Machine Learning",
+      "AI Training",
+      "Remote Work",
+      "English Communication"
+    ],
+    "description": "Join a leading AI lab's cutting-edge GenAI team to be at the core of the AI revolution, where your expertise fuels the development of the most advanced Large…",
+    "description_id": "Peluang kerja remote global untuk posisi Medical Affairs & Commercial Expert. Proyek evaluasi dan pelatihan AI ini menawarkan jadwal kerja fleksibel secara asinkron dengan kompensasi kompetitif senilai $100/jam USD. Cocok untuk profesional yang ingin berkontribusi pada pengembangan model AI mutakhir.",
+    "qualifications": [
+      "Professional proficiency or domain expertise relevant to the role",
+      "Excellent written and verbal communication in English",
+      "Experience using or evaluating modern AI and Large Language Models",
+      "Ability to work independently and manage asynchronous communication"
+    ],
+    "qualifications_id": [
+      "Kemahiran profesional atau keahlian bidang yang relevan dengan posisi",
+      "Kemampuan komunikasi bahasa Inggris yang baik (tertulis dan lisan)",
+      "Pengalaman menggunakan atau mengevaluasi model AI / LLM modern",
+      "Mampu bekerja secara mandiri dengan alur kerja asinkron"
+    ],
+    "responsibilities": [
+      "Evaluate, annotate, and verify AI responses against expert domain benchmarks",
+      "Identify flaws, hallucinations, and formatting errors in LLM outputs",
+      "Provide detailed qualitative feedback and rationale for model ratings",
+      "Adhere to project-specific quality guidelines and delivery timelines"
+    ],
+    "responsibilities_id": [
+      "Mengevaluasi, memberi anotasi, dan memverifikasi respons AI berdasarkan tolok ukur standar keahlian",
+      "Mengidentifikasi kekeliruan, halusinasi fakta, dan kesalahan format pada output LLM",
+      "Memberikan umpan balik terperinci dan alasan di balik setiap penilaian kualitas model",
+      "Mematuhi pedoman kualitas proyek dan tenggat waktu pengerjaan"
+    ],
+    "customReferralUrl": "https://t.mercor.com/yqEan"
+  },
+  {
+    "id": "list_AAABodwhSO6KHR7Vl4tALZJa",
+    "title": "CMC, Manufacturing & Quality Expert",
+    "companyName": "Mercor AI Client",
+    "companyLogo": "/logos/mercor.svg",
+    "category": "AI & Machine Learning",
+    "location": "100% Remote (Global / Indonesia Eligible)",
+    "type": "Contract",
+    "hourlyMin": 70,
+    "hourlyMax": 100,
+    "referralReward": 1000,
+    "openings": 5,
+    "postedDate": "2026-11-02",
+    "isNew": false,
+    "isHighDemand": true,
+    "status": "Open",
+    "requiredSkills": [
+      "AI & Machine Learning",
+      "AI Training",
+      "Remote Work",
+      "English Communication"
+    ],
+    "description": "Join a leading AI lab's cutting-edge GenAI team to be at the core of the AI revolution, where your expertise fuels the development of the most advanced Large…",
+    "description_id": "Peluang kerja remote global untuk posisi CMC, Manufacturing & Quality Expert. Proyek evaluasi dan pelatihan AI ini menawarkan jadwal kerja fleksibel secara asinkron dengan kompensasi kompetitif senilai $100/jam USD. Cocok untuk profesional yang ingin berkontribusi pada pengembangan model AI mutakhir.",
+    "qualifications": [
+      "Professional proficiency or domain expertise relevant to the role",
+      "Excellent written and verbal communication in English",
+      "Experience using or evaluating modern AI and Large Language Models",
+      "Ability to work independently and manage asynchronous communication"
+    ],
+    "qualifications_id": [
+      "Kemahiran profesional atau keahlian bidang yang relevan dengan posisi",
+      "Kemampuan komunikasi bahasa Inggris yang baik (tertulis dan lisan)",
+      "Pengalaman menggunakan atau mengevaluasi model AI / LLM modern",
+      "Mampu bekerja secara mandiri dengan alur kerja asinkron"
+    ],
+    "responsibilities": [
+      "Evaluate, annotate, and verify AI responses against expert domain benchmarks",
+      "Identify flaws, hallucinations, and formatting errors in LLM outputs",
+      "Provide detailed qualitative feedback and rationale for model ratings",
+      "Adhere to project-specific quality guidelines and delivery timelines"
+    ],
+    "responsibilities_id": [
+      "Mengevaluasi, memberi anotasi, dan memverifikasi respons AI berdasarkan tolok ukur standar keahlian",
+      "Mengidentifikasi kekeliruan, halusinasi fakta, dan kesalahan format pada output LLM",
+      "Memberikan umpan balik terperinci dan alasan di balik setiap penilaian kualitas model",
+      "Mematuhi pedoman kualitas proyek dan tenggat waktu pengerjaan"
+    ],
+    "customReferralUrl": "https://t.mercor.com/yqEan"
+  },
+  {
+    "id": "list_AAABodwhNcs38ACc-CRIT5kC",
+    "title": "Pharmacovigilance & Medical Safety Expert",
+    "companyName": "Mercor AI Client",
+    "companyLogo": "/logos/mercor.svg",
+    "category": "AI & Machine Learning",
+    "location": "100% Remote (Global / Indonesia Eligible)",
+    "type": "Contract",
+    "hourlyMin": 70,
+    "hourlyMax": 100,
+    "referralReward": 1000,
+    "openings": 5,
+    "postedDate": "2026-11-01",
+    "isNew": false,
+    "isHighDemand": true,
+    "status": "Open",
+    "requiredSkills": [
+      "AI & Machine Learning",
+      "AI Training",
+      "Remote Work",
+      "English Communication"
+    ],
+    "description": "Join a leading AI lab's cutting-edge GenAI team to be at the core of the AI revolution, where your expertise fuels the development of the most advanced Large…",
+    "description_id": "Peluang kerja remote global untuk posisi Pharmacovigilance & Medical Safety Expert. Proyek evaluasi dan pelatihan AI ini menawarkan jadwal kerja fleksibel secara asinkron dengan kompensasi kompetitif senilai $100/jam USD. Cocok untuk profesional yang ingin berkontribusi pada pengembangan model AI mutakhir.",
+    "qualifications": [
+      "Professional proficiency or domain expertise relevant to the role",
+      "Excellent written and verbal communication in English",
+      "Experience using or evaluating modern AI and Large Language Models",
+      "Ability to work independently and manage asynchronous communication"
+    ],
+    "qualifications_id": [
+      "Kemahiran profesional atau keahlian bidang yang relevan dengan posisi",
+      "Kemampuan komunikasi bahasa Inggris yang baik (tertulis dan lisan)",
+      "Pengalaman menggunakan atau mengevaluasi model AI / LLM modern",
+      "Mampu bekerja secara mandiri dengan alur kerja asinkron"
+    ],
+    "responsibilities": [
+      "Evaluate, annotate, and verify AI responses against expert domain benchmarks",
+      "Identify flaws, hallucinations, and formatting errors in LLM outputs",
+      "Provide detailed qualitative feedback and rationale for model ratings",
+      "Adhere to project-specific quality guidelines and delivery timelines"
+    ],
+    "responsibilities_id": [
+      "Mengevaluasi, memberi anotasi, dan memverifikasi respons AI berdasarkan tolok ukur standar keahlian",
+      "Mengidentifikasi kekeliruan, halusinasi fakta, dan kesalahan format pada output LLM",
+      "Memberikan umpan balik terperinci dan alasan di balik setiap penilaian kualitas model",
+      "Mematuhi pedoman kualitas proyek dan tenggat waktu pengerjaan"
+    ],
+    "customReferralUrl": "https://t.mercor.com/yqEan"
+  },
+  {
+    "id": "list_AAABodwhJxxnEH_MCFZCbpsk",
+    "title": "Clinical Development & Operations Expert",
+    "companyName": "Mercor AI Client",
+    "companyLogo": "/logos/mercor.svg",
+    "category": "AI & Machine Learning",
+    "location": "100% Remote (Global / Indonesia Eligible)",
+    "type": "Contract",
+    "hourlyMin": 70,
+    "hourlyMax": 100,
+    "referralReward": 1000,
+    "openings": 5,
+    "postedDate": "2026-10-31",
+    "isNew": false,
+    "isHighDemand": true,
+    "status": "Open",
+    "requiredSkills": [
+      "AI & Machine Learning",
+      "AI Training",
+      "Remote Work",
+      "English Communication"
+    ],
+    "description": "Join a leading AI lab's cutting-edge GenAI team to be at the core of the AI revolution, where your expertise fuels the development of the most advanced Large…",
+    "description_id": "Peluang kerja remote global untuk posisi Clinical Development & Operations Expert. Proyek evaluasi dan pelatihan AI ini menawarkan jadwal kerja fleksibel secara asinkron dengan kompensasi kompetitif senilai $100/jam USD. Cocok untuk profesional yang ingin berkontribusi pada pengembangan model AI mutakhir.",
+    "qualifications": [
+      "Professional proficiency or domain expertise relevant to the role",
+      "Excellent written and verbal communication in English",
+      "Experience using or evaluating modern AI and Large Language Models",
+      "Ability to work independently and manage asynchronous communication"
+    ],
+    "qualifications_id": [
+      "Kemahiran profesional atau keahlian bidang yang relevan dengan posisi",
+      "Kemampuan komunikasi bahasa Inggris yang baik (tertulis dan lisan)",
+      "Pengalaman menggunakan atau mengevaluasi model AI / LLM modern",
+      "Mampu bekerja secara mandiri dengan alur kerja asinkron"
+    ],
+    "responsibilities": [
+      "Evaluate, annotate, and verify AI responses against expert domain benchmarks",
+      "Identify flaws, hallucinations, and formatting errors in LLM outputs",
+      "Provide detailed qualitative feedback and rationale for model ratings",
+      "Adhere to project-specific quality guidelines and delivery timelines"
+    ],
+    "responsibilities_id": [
+      "Mengevaluasi, memberi anotasi, dan memverifikasi respons AI berdasarkan tolok ukur standar keahlian",
+      "Mengidentifikasi kekeliruan, halusinasi fakta, dan kesalahan format pada output LLM",
+      "Memberikan umpan balik terperinci dan alasan di balik setiap penilaian kualitas model",
+      "Mematuhi pedoman kualitas proyek dan tenggat waktu pengerjaan"
+    ],
+    "customReferralUrl": "https://t.mercor.com/yqEan"
+  },
+  {
+    "id": "list_AAABodwhFg-ByligFaNMTbdJ",
+    "title": "Regulatory Affairs Expert",
+    "companyName": "Mercor AI Client",
+    "companyLogo": "/logos/mercor.svg",
+    "category": "AI & Machine Learning",
+    "location": "100% Remote (Global / Indonesia Eligible)",
+    "type": "Contract",
+    "hourlyMin": 70,
+    "hourlyMax": 100,
+    "referralReward": 1000,
+    "openings": 5,
+    "postedDate": "2026-10-30",
+    "isNew": false,
+    "isHighDemand": true,
+    "status": "Open",
+    "requiredSkills": [
+      "AI & Machine Learning",
+      "AI Training",
+      "Remote Work",
+      "English Communication"
+    ],
+    "description": "Join a leading AI lab's cutting-edge GenAI team to be at the core of the AI revolution, where your expertise fuels the development of the most advanced Large…",
+    "description_id": "Peluang kerja remote global untuk posisi Regulatory Affairs Expert. Proyek evaluasi dan pelatihan AI ini menawarkan jadwal kerja fleksibel secara asinkron dengan kompensasi kompetitif senilai $100/jam USD. Cocok untuk profesional yang ingin berkontribusi pada pengembangan model AI mutakhir.",
     "qualifications": [
       "Professional proficiency or domain expertise relevant to the role",
       "Excellent written and verbal communication in English",
