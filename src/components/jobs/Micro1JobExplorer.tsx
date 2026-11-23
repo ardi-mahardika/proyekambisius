@@ -31,10 +31,8 @@ export function Micro1JobExplorer() {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
   const [minSalary, setMinSalary] = useState<number>(0);
-  const [minReward, setMinReward] = useState<number>(0);
   const [onlyNew, setOnlyNew] = useState(false);
   const [onlyHighDemand, setOnlyHighDemand] = useState(false);
-  const [minOpenings, setMinOpenings] = useState<number>(1);
   const [sortBy, setSortBy] = useState<"latest" | "salary" | "reward" | "openings">("latest");
   const [showFiltersMobile, setShowFiltersMobile] = useState(false);
 
@@ -78,12 +76,6 @@ export function Micro1JobExplorer() {
       // Salary filter (hourlyMax must be >= minSalary)
       const matchesSalary = job.hourlyMax >= minSalary;
 
-      // Referral reward filter
-      const matchesReward = job.referralReward >= minReward;
-
-      // Openings filter
-      const matchesOpenings = job.openings >= minOpenings;
-
       // Badges filter
       const matchesNew = !onlyNew || job.isNew;
       const matchesHighDemand = !onlyHighDemand || job.isHighDemand;
@@ -92,8 +84,6 @@ export function Micro1JobExplorer() {
         matchesSearch &&
         matchesCategory &&
         matchesSalary &&
-        matchesReward &&
-        matchesOpenings &&
         matchesNew &&
         matchesHighDemand
       );
@@ -120,10 +110,8 @@ export function Micro1JobExplorer() {
     searchQuery,
     selectedCategory,
     minSalary,
-    minReward,
     onlyNew,
     onlyHighDemand,
-    minOpenings,
     sortBy,
   ]);
 
@@ -131,10 +119,8 @@ export function Micro1JobExplorer() {
     setSearchQuery("");
     setSelectedCategory("All");
     setMinSalary(0);
-    setMinReward(0);
     setOnlyNew(false);
     setOnlyHighDemand(false);
-    setMinOpenings(1);
     setSortBy("latest");
     setCurrentPage(1);
   };
@@ -143,10 +129,8 @@ export function Micro1JobExplorer() {
     searchQuery !== "" ||
     selectedCategory !== "All" ||
     minSalary > 0 ||
-    minReward > 0 ||
     onlyNew ||
-    onlyHighDemand ||
-    minOpenings > 1;
+    onlyHighDemand;
 
   // Pagination Logic
   const ITEMS_PER_PAGE = 9;
@@ -159,10 +143,8 @@ export function Micro1JobExplorer() {
     searchQuery,
     selectedCategory,
     minSalary,
-    minReward,
     onlyNew,
     onlyHighDemand,
-    minOpenings,
     sortBy,
   ]);
 
@@ -294,11 +276,11 @@ export function Micro1JobExplorer() {
           </div>
 
           {/* Advanced Multi-Filters (Desktop always visible, mobile toggleable) */}
-          <div className={`${showFiltersMobile ? "block" : "hidden"} lg:block pt-3 border-t border-slate-100 space-y-3`}>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className={`${showFiltersMobile ? "block" : "hidden"} lg:block pt-3 border-t border-slate-100`}>
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
               
               {/* Min Salary Filter */}
-              <div>
+              <div className="w-full sm:max-w-xs">
                 <label className="text-xs font-semibold text-slate-500 flex justify-between mb-1.5">
                   <span>{t.explorer.minSalary}</span>
                   <strong className="text-slate-800">${minSalary}{language === "id" ? "/jam" : "/hr"}</strong>
@@ -314,42 +296,8 @@ export function Micro1JobExplorer() {
                 />
               </div>
 
-              {/* Min Referral Reward Filter */}
-              <div>
-                <label className="text-xs font-semibold text-slate-500 flex justify-between mb-1.5">
-                  <span>{t.explorer.minReward}</span>
-                  <strong className="text-purple-700 font-bold">${minReward} USD</strong>
-                </label>
-                <input
-                  type="range"
-                  min="0"
-                  max="1500"
-                  step="100"
-                  value={minReward}
-                  onChange={(e) => setMinReward(Number(e.target.value))}
-                  className="w-full h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-purple-600"
-                />
-              </div>
-
-              {/* Min Openings */}
-              <div>
-                <label className="text-xs font-semibold text-slate-500 flex justify-between mb-1.5">
-                  <span>{t.explorer.minOpenings}</span>
-                  <strong className="text-slate-800">{minOpenings} {t.explorer.positionsSuffix}</strong>
-                </label>
-                <input
-                  type="range"
-                  min="1"
-                  max="10"
-                  step="1"
-                  value={minOpenings}
-                  onChange={(e) => setMinOpenings(Number(e.target.value))}
-                  className="w-full h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-blue-600"
-                />
-              </div>
-
               {/* Checkbox Toggles: New & High Demand */}
-              <div className="flex items-center gap-4 pt-4 sm:pt-0">
+              <div className="flex items-center gap-4">
                 <label className="inline-flex items-center gap-2 cursor-pointer text-xs font-semibold text-slate-700 select-none">
                   <input
                     type="checkbox"
